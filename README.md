@@ -1,6 +1,6 @@
 # IM5_Emoji_Quiz
 
-Ziel
+Ausgangslage und Ziel
 
 Vorgehensweise
 
