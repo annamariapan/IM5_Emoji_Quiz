@@ -24,5 +24,6 @@ Obwohl Programmieren weder zu meinen Stärken noch zu meinen Lieblingsbeschäfti
 ## Quellen
 - Chat GPT 4
 - Coaching Samuel
+- Eigene Notizen aus dem Unterricht + Slides
 - YouTube
 - W3Schools
