@@ -1,0 +1,234 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f8ff;
+  background-image: url('hintergrund/7339347.jpg');
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.btn {
+  background-color: #cc00ff;
+  color: white;
+  padding: 10px 20px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 28px;
+}
+
+
+.error {
+  color: red;
+  font-size: 1em;
+  display: none;
+}
+
+.error.show {
+  display: block;
+}
+
+
+
+.back-to-start {
+  font-size: 14px; /* Kleinerer Schriftgröße */
+  padding: 5px 10px; /* Kleinerer Innenabstand */
+  /* Optional: Wenn ich die Breite und Höhe festlegen möchtest */
+  width: 100px;
+  height: 30px;
+
+}
+
+
+
+#next-btn, #submit-btn {
+  width: 180px; /* Breite */
+  height: 50px; /* Höhe */
+  font-size: 16px;
+  font-family: 'Century Gothic', 'Century Gothic'; /* Setze den Schriftstil auf kursiv */
+  color:white;
+  background-color:#838383;
+}
+
+#next-btn:hover {
+  background-color: hsl(0, 0%, 18%);
+}
+
+
+#back-btn {
+  background-color: #cc00ff; /* Pinke Hintergrundfarbe */
+  color: white;              /* Weiße Textfarbe */
+  padding: 10px 20px;          /* Oberer/unterer und linker/rechter Abstand */
+  margin: 10px 0;              /* Oberer/unterer Rand */
+  border: none;                /* Kein Rand */
+  border-radius: 5px;          /* Abgerundete Ecken */
+  cursor: pointer;             /* Hand-Zeiger beim Drüberfahren */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+#back-btn:hover {
+  background-color: #520066;  /* Weiße Hintergrundfarbe beim Drüberfahren */       
+}
+
+
+
+#answer-buttons .btn {
+  font-size: 20px; 
+  font-family: 'Century Gothic', 'Century Gothic'
+}
+
+
+#start-btn:hover {
+  background-color: #520066; /*Wenn man Quiz starten klickt*/
+  color: white;
+}
+
+#question-text {
+  font-weight: bold;
+  font-size: 22px;
+}
+
+h1 {
+  font-family: 'fantasy', 'fantasy', cursive;
+  font-weight: extra bolder;
+  font-size: 48px;
+  margin-top: -160px;
+}
+
+.subtitle {
+  font-size: 19px;   /* Schriftgröße */
+  font-family: 'Century Gothic', 'Century Gothic';  /* Schriftstil */
+  font-weight: normal;
+  margin-bottom: 22px; /* Setze den unteren Abstand */
+
+}
+p {
+  font-family: 'Arial', 'Century Gothic';
+  font-weight: normal;
+  font-size: 19px;
+}
+
+
+#correct-answers{
+  font-size: 19px;   /* Setze die Schriftgröße */
+  font-family: 'Century Gothic', 'Century Gothic'; /* Setze den Schriftstil auf kursiv */
+  font-weight: normal;
+  margin-bottom: 20px; 
+}
+
+#start-container {
+  text-align: center;
+}
+
+#quiz-container {
+  width: 100%;
+  max-width: 500px;
+}
+
+#timer {
+  background-color: #838383;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+#question-container, #results-container {
+  margin-top: 20px;
+}
+
+#question-header {
+  margin-bottom: 20px;
+}
+
+#emoji-display {
+  font-size: 3em;
+  margin: 10px 0;
+}
+
+.btn-container {
+  display: grid;
+  grid-gap: 10px;
+}
+
+.hide {
+  display: none;
+}
+
+.disabled {
+  cursor: not-allowed;
+}
+
+.correct {
+  background-color: #4caf50;
+}
+
+.wrong {
+  background-color: #f44336;
+}
+
+/*Media Queries für Mobile*/
+@media (max-width: 767px) {
+  body {
+    font-family: Helvetica, sans-serif;
+  }
+
+  h1 {
+    font-family: 'fantasy', 'fantasy', cursive;
+    font-weight: extra bolder;
+}
+
+}
+/*Media Queries für Tablet*/
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  body {
+      font-size: 18px;
+  }
+
+  .container, #quiz-container {
+      padding: 20px;
+      width: 80%; /* Etwas weniger als volle Breite */
+  }
+
+  h1 {
+    font-family: 'fantasy', 'fantasy', cursive;
+    font-weight: extra bolder;
+      font-size: 40px;
+      margin-top: -120px;
+  }
+
+  .btn, #next-btn, #submit-btn, #back-btn {
+      font-size: 24px;
+      padding: 15px;
+  }
+
+  #timer {
+      font-size: 1.5em;
+  }
+
+  #question-text, .subtitle, p, #correct-answers {
+      font-size: 20px;
+  }
+
+  #emoji-display {
+      font-size: 2.5em;
+  }
+}

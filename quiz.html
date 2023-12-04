@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+
+  <!-- Meta-Tags für Charakter-Set, Browser-Kompatibilität und Ansichtseinstellungen -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Link zum Stylesheet, wo das CSS für das Design definiert ist -->
+  <link rel="stylesheet" href="styles.css">
+
+
+  <!-- Titel der Webseite (Quizsite), der in der Browser-Tab-Leiste angezeigt wird -->
+  <title>Emoji Quiz</title>
+
+
+   <!-- Favicon-Links für verschiedene Geräte und Bildschirmgrößen -->
+   <link rel="icon" type="image/png" sizes="16x16" href="emoji_favicons/favicon-16x16.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="emoji_favicons/favicon-32x32.png">
+ 
+     <!-- Grössere Favicon-Icons für Android und Windows -->
+   <link rel="icon" type="image/png" sizes="192x192" href="emoji_favicons/android-chrome-192x192.png">
+   <link rel="icon" type="image/png" sizes="512x512" href="emoji_favicons/android-chrome-512x512.png">
+ 
+   <!-- Apple Touch Icon -->
+   <link rel="apple-touch-icon" sizes="180x180" href="emoji_favicons/apple-touch-icon.png">
+
+ 
+</head>
+<body>
+
+  <!-- Haupt-Container für das Quiz -->
+  <div id="quiz-container">
+     <!-- Container für die Anzeige der Fragen und Antworten -->
+    <div id="question-container" class="container">
+       <!-- Timer für das Quiz -->
+      <div id="timer">02:00</div>
+
+       <!-- Bereich für die jeweilige Frage -->
+      <div id="question-header">
+        <!-- Anzeige der aktuellen Frage Nummer -->
+        <span id="question-number"></span>
+        <!-- Anzeige der Emoji für die aktuelle Frage -->
+        <div id="emoji-display"></div>
+        <!-- Text der aktuellen Frage -->
+        <p id="question-text"></p>
+      </div>
+
+       <!-- Container für die Antwort-Buttons -->
+      <div id="answer-buttons" class="btn-container"></div>
+
+       <!-- Buttons für die Navigation zwischen den Fragen -->
+      <button id="next-btn" class="btn hide">Nächste Frage</button>
+      <button id="submit-btn" class="btn hide">Quiz beenden</button>
+    </div>
+
+     <!-- Container für die Anzeige der Ergebnisse nach Beendigung des Quiz -->
+    <div id="results-container" class="container hide">
+        <h2>Quiz beendet!</h2>
+        <h2 id="correct-answers">Du hast 0 von 9 Fragen richtig beantwortet!</h2>
+      <!-- Button um zurück zur Startseite zu gelangen -->
+        <button id="back-btn" onclick="location.href='index.html'">Zurück zur Startseite</button>
+    </div>
+  </div>
+
+  <!-- Einbindung des JavaScript-Files, welches die Logik des Quiz steuert -->
+  <script src="script.js"></script>
+
+  <!-- JavaScript-Code, um zu verhindern, dass die Seite neu geladen wird -->
+  <script>
+    // Überprüfen, ob die Seite neu geladen wurde
+    if (window.performance.navigation.type === 1) {
+      // Der Benutzer hat die Seite neu geladen
+      window.location.href = 'index.html';
+    }
+  </script>
+</body>
+</html>

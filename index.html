@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+
+  <!-- Meta-Tags für Charakter-Set, Browser-Kompatibilität und Ansichtseinstellungen -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!-- Link zum Stylesheet, wo das CSS für das Design definiert ist -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!---Link zum Manifest-->
+  <link rel="manifest" href="manifest.json">
+
+ <!--- <link rel="manifest" href="manifest.json">
+
+  <!-- Titel der Webseite, der in der Browser-Tab-Leiste angezeigt wird -->
+  <title>Emoji Quiz</title>
+
+   
+ <!-- Favicon-Links für verschiedene Geräte und Bildschirmgrößen -->
+ <link rel="icon" type="image/png" sizes="16x16" href="emoji_favicons/favicon-16x16.png">
+ <link rel="icon" type="image/png" sizes="32x32" href="emoji_favicons/favicon-32x32.png">
+
+   <!-- Grössere Favicon-Icons für Android und Windows -->
+ <link rel="icon" type="image/png" sizes="192x192" href="emoji_favicons/android-chrome-192x192.png">
+ <link rel="icon" type="image/png" sizes="512x512" href="emoji_favicons/android-chrome-512x512.png">
+
+ <!-- Apple Touch Icon -->
+ <link rel="apple-touch-icon" sizes="180x180" href="emoji_favicons/apple-touch-icon.png">
+
+</head>
+<body>
+
+    <!-- Start-Container für die Willkommensnachricht und den Start-Button -->
+  <div id="start-container">
+
+    <!-- Überschrift, die den Nutzer begrüßt -->
+    <h1>Willkommen beim Emoji Quiz!</h1>
+
+     <!-- Untertitel, der den Nutzer auffordert, das Quiz zu starten -->
+    <p class="subtitle">Klicke auf den Start-Button, um das Quiz zu beginnen.</p>
+
+    <!-- Start-Button, der das Quiz startet -->
+    <button id="start-btn" class="btn">Start</button>
+  </div>
+
+   <!-- Skript-Tag, um das JavaScript-File einzubinden, welches die Logik des Quiz steuert -->
+  <script src="script.js"></script>
+
+  <!-- #2: Service-Worker registrieren -->
+<script>
+  if (typeof navigator.serviceWorker !== 'undefined') {
+  navigator.serviceWorker.register('serviceworker.js')
+  }
+ </script>
+ <!-- ENDE #2: Service-Worker registrieren -->
+
+</body>
+</html>
