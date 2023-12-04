@@ -9,6 +9,7 @@ In meiner Bachelor-Arbeit setzte ich mich mit dem Thema Emoji-Gebrauch verschied
 Nach Erhalt des Auftrags habe ich mir Gedanken gemacht, was ich als Web-Projekt umsetzen könnte. Relativ schnell bin ich dann auf die Idee mit dem Emoji-Quiz gekommen. Einige Elemente davon wie beispielsweise der Timer hatten wir bereits im Unterricht und es schien mir eine kreative Möglichkeit, mein Bachelor-Thema umzusetzen. 
 
 Um ein besseres Verständnis dafür zu erhalten, welche Schritte auf mich zukommen, habe ich nach der Ideenentscheidung Wireframes angefertigt. So entstand eine Skizze der Homeseite, Quizseite sowie eine Skizze der "Quiz beendet"- Meldung. 
+![Wireframes des Emoji-Quiz-Projekts](main/Wireframes/Frames_website.jpg)
 
 ## Challenges
 
