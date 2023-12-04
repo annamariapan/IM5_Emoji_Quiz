@@ -1,11 +1,11 @@
 # IM5_Emoji_Quiz
 
-# Ausgangslage und Ziel
+## Ausgangslage und Ziel
 
-Vorgehensweise
+## Vorgehensweise
 
-Challenges
+## Challenges
 
-Fazit 
+## Fazit 
 
-Quellen
+## Quellen
